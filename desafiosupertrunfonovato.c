@@ -26,6 +26,7 @@ scanf(" %c", &estado);
 printf("Digite um número de 01 a 04: \n");
 scanf("%s", &codigo);
 printf("O nome da cidade: \n");
+//scanf("%[^\n]s%*c", &nomecity);
 scanf("%s", &nomecity);
 printf("Agora o número de habitantes da cidade: \n");
 scanf("%d", &popu);
@@ -61,8 +62,8 @@ scanf("%d", &pontotur2);
 
 
 
-float densi = popu / area;
-float ppc = (pib*1000000000) / popu;       //ppc - pib per capita
+double densi = popu / area;
+double ppc = (pib*1000000000) / popu;       //ppc - pib per capita
 
 
     printf("--------CARTA 1--------\n");
